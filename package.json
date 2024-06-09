@@ -1,0 +1,16 @@
+{
+  "name": "gautolikerooms",
+  "version": "1.0.0",
+  "author": "Alynva",
+  "description": "Automatically give a like in all rooms you visit.",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.mjs -p 9092",
+    "build": "npx esbuild src/index.mjs --bundle --external:gnode-api --minify --platform=node --outfile=dist/index.mjs --format=esm"
+  },
+  "keywords": [],
+  "dependencies": {
+    "gnode-api": "^0.2.18"
+  }
+}
